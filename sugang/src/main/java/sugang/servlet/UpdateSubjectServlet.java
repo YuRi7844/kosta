@@ -8,10 +8,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class SubjectInputServlet
+ * Servlet implementation class SubjectUpdateServlet
  */
-@WebServlet("/subjectInput")
-public class SubjectInputServlet extends HttpServlet {
+@WebServlet("/updateSubject")
+public class UpdateSubjectServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**

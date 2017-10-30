@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class SubjectFindServlet
  */
-@WebServlet("/subjectFind")
-public class SubjectFindServlet extends HttpServlet {
+@WebServlet("/findSubjectById")
+public class FindSubjectByIdServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
