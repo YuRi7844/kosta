@@ -29,14 +29,14 @@ public class AddEnrollmentServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//1. 요청파라미터 조회
+		/*//1. 요청파라미터 조회
 		request.setCharacterEncoding("UTF-8");// 요청 파라미터 한글처리. - TODO 나중에 필터처리
 		int result;
 		try {
-			Enrollment enrollment = (Enrollment)request.getAttribute("enrollment");
+			int id = (int)request.getAttribute("studentId");
 			
 			EnrollmentServiceImpl service = EnrollmentServiceImpl.getInstance();
-			result = service.addEnrollment(enrollment);//TODO 나중에 서비스에 있는 메소드와 이름 일치하는지 확인
+			result = service.findEnrollmentByStudentId(id);//TODO 나중에 서비스에 있는 메소드와 이름 일치하는지 확인
 			
 		//2. 응답
 			//처리결과를 requestScope에 저장
@@ -46,7 +46,7 @@ public class AddEnrollmentServlet extends HttpServlet {
 		}catch(Exception e){//TODO
 			request.setAttribute("error_message", "");
 			
-		}
+		}*/
 				
 	}
 
