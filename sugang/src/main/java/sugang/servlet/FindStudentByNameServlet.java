@@ -31,10 +31,10 @@ public class FindStudentByNameServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//1. 요청파라미터 조회
 		request.setCharacterEncoding("UTF-8");// 요청 파라미터 한글처리. - TODO 나중에 필터처리
-		int studentId = (int)request.getAttribute("studentId");
+		int studentId = (int)request.getAttribute("studentName");
 		
 		StudentServiceImpl service = StudentServiceImpl.getInstance();
-		Student result = service.findStudentById(studentId);
+		Student result = service.findStudentByName(studentName);
 		
 		//2. 응답
 		//처리결과를 requestScope에 저장
